@@ -24,30 +24,46 @@ public class Forsyth_Edwards_Notation {
         }
 
         for (int i = 0; i < board.length; i++){
-            if (board[i] == 'r'){
-                System.out.print("\u265C");
-            } else if (board[i] == 'b') {
-                System.out.print("\u265E");
-            } else if (board[i] == 'q') {
-                System.out.print("\u265B");
-            } else if (board[i] == 'k') {
-                System.out.print("\u265A");
-            } else if (board[i] == 'n') {
-                System.out.print("\u265D");
-            } else if (board[i] == 'p') {
-                System.out.print("\u265F");
-            } else if (board[i] == 'R') {
-                System.out.print("\u2656");
-            } else if (board[i] == 'B') {
-                System.out.print("\u2658");
-            } else if (board[i] == 'Q') {
-                System.out.print("\u2655");
-            } else if (board[i] == 'K') {
-                System.out.print("\u2654");
-            } else if (board[i] == 'N') {
-                System.out.print("\u2657");
-            } else if (board[i] == 'P') {
-                System.out.print("\u2659");
+            switch (board[i]){
+                case 'p':
+                    System.out.print("♟");
+                    break;
+                case 'r':
+                    System.out.print("♜");
+                    break;
+                case 'n':
+                    System.out.print("♞");
+                    break;
+                case 'b':
+                    System.out.print("♝");
+                    break;
+                case 'q':
+                    System.out.print("♛");
+                    break;
+                case 'k':
+                    System.out.print("♚");
+                    break;
+                case 'P':
+                    System.out.print("♙");
+                    break;
+                case 'R':
+                    System.out.print("♖");
+                    break;
+                case 'N':
+                    System.out.print("♘");
+                    break;
+                case 'B':
+                    System.out.print("♗");
+                    break;
+                case 'Q':
+                    System.out.print("♕");
+                    break;
+                case 'K':
+                    System.out.print("♔");
+                    break;
+                default:
+                    System.out.print(" ");
+                    break;
             }
             if (i % 8 == 7){
                 System.out.println();
