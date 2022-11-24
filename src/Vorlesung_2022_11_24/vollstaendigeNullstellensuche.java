@@ -28,5 +28,4 @@ public class vollstaendigeNullstellensuche {
                 sucher(mitte, b, distanz);
         }
     }
-
 }
