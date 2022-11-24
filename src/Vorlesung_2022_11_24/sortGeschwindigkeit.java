@@ -8,7 +8,7 @@ public class sortGeschwindigkeit {
     public static void main(String[] args) {
 
         Random r = new Random();
-        int random = r.nextInt(1000000);
+        int random = r.nextInt(100000);
         int[] a = new int[random];
         for (int i = 0; i < a.length; i++) {
             a[i] = r.nextInt(1_000_000_000);
@@ -53,6 +53,15 @@ public class sortGeschwindigkeit {
         long startQuick = System.currentTimeMillis();
         Arrays.sort(quick);
         long endQuick = System.currentTimeMillis();
+
+        // Median berechnen
+        int median = 0;
+        if (quick.length % 2 == 0) {
+            median = (quick[quick.length / 2] + quick[quick.length / 2 - 1]) / 2;
+        } else {
+            median = quick[quick.length / 2];
+        }
+        System.out.println("Median: " + median);
 
         System.out.println("BubbleSort: " + (endBubble - startBubble) + "ms");
         System.out.println("Arrays.sort: " + (endQuick - startQuick) + "ms");
