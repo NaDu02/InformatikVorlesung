@@ -30,3 +30,18 @@ public class Pascalsches_Dreieck {
         }
     }
 }
+/*
+class test{
+
+    public static void main(String[] args) {
+
+        char c = '8';
+        //int i = (int) c;
+        //System.out.println((c - '0').getClass().getSimpleName());
+        String test = "test";
+
+        System.out.println(test.getClass().getSimpleName());
+
+    }
+
+}*/
