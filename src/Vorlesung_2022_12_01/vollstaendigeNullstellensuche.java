@@ -26,8 +26,5 @@ public class vollstaendigeNullstellensuche {
             if (b - mitte > distanz || f(b) * f(mitte) < 0)
                 sucher(mitte, b, distanz);
         }
-
-
     }
-
 }
